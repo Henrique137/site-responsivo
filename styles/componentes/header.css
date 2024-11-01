@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+    max-width: 1366px;
+    margin-inline: auto;
+}
+
+.header--logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav--ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav--a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header--icon--btn {
+    display: none;
+}
+
+.header--icon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+@media (width < 768px) {
+    .header--nav {
+        display: none;
+    }
+
+    .header--icon--btn {
+        display: block;
+    }
+}
